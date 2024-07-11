@@ -34,3 +34,9 @@ class ShowJsonDirective(SphinxDirective):
 
 def setup(app: object) -> dict:
     app.add_directive("show-json", ShowJsonDirective)
+
+def sample_function(input):
+    if len(input)>1:
+        return True
+    else:
+        return False
